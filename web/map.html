@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WaterMap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="./style/icons/favicon-32x32.png">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
+<script src="./js/map.js"></script>
+<link rel="stylesheet" href="./style/styles.css">
+
+</head>
+
+<body>
+
+<div id="map" style="width: 100%;height: 100%; position: absolute; bottom: 0px"></div>
+
+<img src="./style/images/filter.svg" onclick="showNavigator()" style="position: absolute; bottom: 25px; left: 10px; z-index: 100000"></img>
+
+<div id="navigator" class="justify-content-center" style="display: none;">
+  <nav class="nav nav-pills nav-justified bg-light fixed-bottom justify-content-center" style="position: absolute; bottom: 33px; left: 65px; width: 75%; max-width: 300px;z-index: 100000; padding: 2px;">
+    <a id="tab0" class="nav-item nav-link active" margin="1px" onclick="filter(0)" href="#">Все</a>
+    <a id="tab1" class="nav-item nav-link" margin="1px" onclick="filter(1)" href="#">Автомати</a>
+    <a id="tab2" class="nav-item nav-link" margin="1px" onclick="filter(2)" href="#">Заклади</a>
+  </nav>
+</div>
+
+</body>
+</html>

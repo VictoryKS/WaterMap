@@ -1,0 +1,25 @@
+{
+  "name": "watermap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictoryKS/WaterMap.git"
+  },
+  "author": "VictoryKS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictoryKS/WaterMap/issues"
+  },
+  "homepage": "https://github.com/VictoryKS/WaterMap#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "mysql": "^2.17.1",
+    "pg": "^7.14.0"
+  }
+}

@@ -1,0 +1,37 @@
+.filterIcon {
+  color: #007094;
+}
+.nav-pills .nav-link.active {
+  background-color: #007094;
+}
+.caption {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #007195;
+}
+.cafe {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #BBBBBB;
+}
+.price {
+  margin-top: 10px !important;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #01BCF8;
+}
+img.cafe {
+  margin-right: 3px;
+  width: 120px;
+  height: 89.94px;
+  border-radius: 6px;
+}
+.leaflet-popup-content p {
+  margin: 0px;
+}
